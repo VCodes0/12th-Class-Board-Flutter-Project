@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:poject_1/View/JEEAdvanced/jee_advanced.dart';
 import 'package:poject_1/View/JEEMains/jee_mains.dart';
 import 'package:poject_1/View/MHCET/mhcet.dart';
@@ -44,10 +45,10 @@ class HomeScreen extends StatelessWidget {
             Positioned(
               left: mq.width * 0.04,
               top: mq.height * 0.35,
-              child: const Text(
+              child: Text(
                 "12TH STD QUESTION PAPERS",
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: GoogleFonts.poppins(
                   color: Colors.white,
                   fontSize: 24,
                   fontWeight: FontWeight.bold,

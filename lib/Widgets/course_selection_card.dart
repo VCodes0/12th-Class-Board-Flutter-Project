@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Widget courseSelectionCard(
   BuildContext context, {
@@ -42,7 +43,7 @@ Widget courseSelectionCard(
               children: [
                 Text(
                   title,
-                  style: const TextStyle(
+                  style: GoogleFonts.poppins(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Colors.black87,
@@ -51,7 +52,10 @@ Widget courseSelectionCard(
                 const SizedBox(height: 5),
                 Text(
                   description,
-                  style: TextStyle(fontSize: 13, color: Colors.grey[600]),
+                  style: GoogleFonts.poppins(
+                    fontSize: 13,
+                    color: Colors.grey[600],
+                  ),
                 ),
               ],
             ),
