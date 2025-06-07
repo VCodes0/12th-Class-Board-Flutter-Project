@@ -5,8 +5,8 @@ class JeeAdvanced extends StatelessWidget {
 
   final bodyColor = const LinearGradient(
     colors: [Color(0xFFF69B9B), Color(0xFFEB6A71)],
-    begin: Alignment.topCenter, 
-    end: Alignment.bottomCenter, 
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
   );
 
   final List<String> userList = const [
