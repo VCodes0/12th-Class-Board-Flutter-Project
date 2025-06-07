@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:poject_1/View/JEEAdvanced/jee_advanced.dart';
-import 'package:poject_1/View/JEEMains/jee_mains.dart';
-import 'package:poject_1/View/MHCET/mhcet.dart';
 import 'package:poject_1/View/NEET/neet.dart';
-
+import 'package:poject_1/View/MHCET/mhcet.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../../Widgets/course_selection_card.dart';
+import 'package:poject_1/View/JEEMains/jee_mains.dart';
+import 'package:poject_1/View/JEEAdvanced/jee_advanced.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -27,11 +26,7 @@ class HomeScreen extends StatelessWidget {
         decoration: BoxDecoration(gradient: bodyGradient),
         child: Stack(
           children: [
-            Image.asset(
-              "assets/header.png",
-              width: mq.width,
-              fit: BoxFit.fill,
-            ),
+            Image.asset("assets/header.png", width: mq.width, fit: BoxFit.fill),
             Positioned(
               top: mq.height * 0.07,
               left: mq.width * 0.57 - (mq.height * 0.25 / 1.7),
@@ -75,9 +70,7 @@ class HomeScreen extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(
-                              builder: (context) => JeeMains(),
-                            ),
+                            MaterialPageRoute(builder: (context) => JeeMains()),
                           );
                         },
                         child: courseSelectionCard(
