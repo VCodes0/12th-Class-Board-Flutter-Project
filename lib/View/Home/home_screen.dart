@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:poject_1/View/NEET/neet.dart';
 import 'package:poject_1/View/MHCET/mhcet.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -67,12 +68,7 @@ class HomeScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => JeeMains()),
-                          );
-                        },
+                        onTap: () => Get.to(JeeMains()),
                         child: courseSelectionCard(
                           context,
                           primaryIcon: FontAwesomeIcons.atom,
@@ -85,14 +81,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                       InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => JeeAdvanced(),
-                            ),
-                          );
-                        },
+                        onTap: () => Get.to(JeeAdvanced()),
                         child: courseSelectionCard(
                           context,
                           primaryIcon: FontAwesomeIcons.lightbulb,
@@ -105,12 +94,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                       InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Mhcet()),
-                          );
-                        },
+                        onTap: () => Get.to(Mhcet()),
                         child: courseSelectionCard(
                           context,
                           primaryIcon: FontAwesomeIcons.graduationCap,
@@ -123,12 +107,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                       InkWell(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => Neet()),
-                          );
-                        },
+                        onTap: () => Get.to(Neet()),
                         child: courseSelectionCard(
                           context,
                           primaryIcon: FontAwesomeIcons.dna,

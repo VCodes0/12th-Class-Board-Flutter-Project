@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:poject_1/Controller/JEE-Mains/jeemains_controller.dart';
+import 'package:get/get.dart';
+import 'package:poject_1/Controller/jeemains_controller.dart';
 import 'package:poject_1/View/Splash/splash_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (context) => JeeMainsController()),
       ],
-      child: MaterialApp(
+      child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
         home: SplashScreen(),
       ),

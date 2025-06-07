@@ -7,8 +7,6 @@ class JeeMainsController extends ChangeNotifier {
 
   List<dynamic> get jeeMainsUserData => _jeeMainsData;
 
-  get length => null;
-
   void getJeeMainsAPIData() async {
     try {
       var response = await dio.get(

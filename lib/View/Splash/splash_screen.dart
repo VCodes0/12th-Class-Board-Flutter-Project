@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:poject_1/View/Home/home_screen.dart';
 
@@ -15,10 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Timer(Duration(seconds: 2), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => HomeScreen()),
-      );
+      Get.to(HomeScreen());
     });
     super.initState();
   }
